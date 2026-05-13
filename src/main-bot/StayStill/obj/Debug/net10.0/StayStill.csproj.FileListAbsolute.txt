@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\StayStill\obj\Debug\net10.0\StayStill.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\StayStill\obj\Debug\net10.0\StayStill.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\StayStill\obj\Debug\net10.0\StayStill.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\StayStill\obj\Debug\net10.0\StayStill.AssemblyInfo.cs
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\StayStill\obj\Debug\net10.0\StayStill.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\StayStill\obj\Debug\net10.0\StayStill.sourcelink.json

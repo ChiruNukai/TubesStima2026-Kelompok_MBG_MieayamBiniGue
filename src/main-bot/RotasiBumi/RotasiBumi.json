@@ -1,0 +1,10 @@
+{
+  "name": "RotasiBumi",
+  "version": "1.0",
+  "authors": ["Jalaludin Mufadhol A"],
+  "description": "A bot that will destroy detected enemies by crashing into itself and firing a powerful attack.",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 10.0",
+  "programmingLang": "C# 10.0"
+}
