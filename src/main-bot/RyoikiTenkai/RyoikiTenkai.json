@@ -1,0 +1,10 @@
+{
+  "name": "RyoikiTenkai",
+  "version": "1.0",
+  "authors": ["Jundi Lamtara of MBG"],
+  "description": "Kali ini saya akan lawan! Domain Expansion!!!",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 9.0",
+  "programmingLang": "C# 10.0"
+}
