@@ -1,4 +1,8 @@
 C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\bin\Debug\net10.0\Kamikaze.exe
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\bin\Debug\net10.0\Kamikaze.deps.json
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\bin\Debug\net10.0\Kamikaze.runtimeconfig.json
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\bin\Debug\net10.0\Kamikaze.dll
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\bin\Debug\net10.0\Kamikaze.pdb
 C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\bin\Debug\net10.0\Microsoft.Build.Locator.dll
 C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll
 C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -25,3 +29,5 @@ C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\
 C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\obj\Debug\net10.0\Kamikaze.dll
 C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\obj\Debug\net10.0\refint\Kamikaze.dll
 C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\obj\Debug\net10.0\Kamikaze.pdb
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\obj\Debug\net10.0\Kamikaze.genruntimeconfig.cache
+C:\Users\Lenovo\Documents\GitHub\Kampus\Sem-4\Panzerfaust\src\main-bot\Kamikaze\obj\Debug\net10.0\ref\Kamikaze.dll

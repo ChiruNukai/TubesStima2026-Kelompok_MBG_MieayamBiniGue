@@ -1,5 +1,6 @@
 using System;
 using System.Drawing;
+using System.Dynamic;
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
 
@@ -21,7 +22,6 @@ public class RotasiBumi : Bot
         BulletColor = Color.Yellow;
         ScanColor = Color.Green;
         
-        int zigzagDirection = 1;
         AdjustGunForBodyTurn = true;
 
         while (IsRunning)
@@ -40,14 +40,27 @@ public class RotasiBumi : Bot
         
         SetTurnGunLeft(bearing);
 
-        if(Math.Abs(bearing) < 10 && GunHeat == 0)
+        if(Math.Abs(bearing) < 5 && GunHeat == 0)
         {
             Fire(Math.Min(3, 400 / distance));
         }
         
-
-        SetTurnLeft(20);
-        SetForward(20);
+        if(distance > 300)
+        {
+            double angle = BearingTo(e.X, e.Y);
+            SetTurnLeft(angle);
+            SetForward(distance - 150);
+        }
+        else if (distance > 200)
+        {
+            SetTurnLeft(20);
+            SetForward(100);
+        }
+        else
+        {   
+            SetTurnLeft(90);
+            SetForward(200);
+        }
         Go();
         
         

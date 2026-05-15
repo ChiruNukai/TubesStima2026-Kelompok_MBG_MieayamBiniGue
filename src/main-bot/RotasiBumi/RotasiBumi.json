@@ -1,8 +1,8 @@
 {
   "name": "RotasiBumi",
-  "version": "1.0",
+  "version": "1.1",
   "authors": ["Jalaludin Mufadhol A"],
-  "description": "A bot that will destroy detected enemies by crashing into itself and firing a powerful attack.",
+  "description": "Bot that go straight to enemies they detect and will turn around to avoid enemy attacks if they are close enough.",
   "homepage": "",
   "countryCodes": ["id"],
   "platform": ".Net 10.0",

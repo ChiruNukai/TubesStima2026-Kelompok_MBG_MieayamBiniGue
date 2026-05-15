@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RotasiBumi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+daee807a994a2f63693fef16f6a32e50c88dc5bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("RotasiBumi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RotasiBumi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

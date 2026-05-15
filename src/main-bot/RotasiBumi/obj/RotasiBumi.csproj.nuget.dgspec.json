@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Documents\\GitHub\\Kampus\\Sem-4\\Panzerfaust\\src\\main-bot\\RotasiBumi\\RotasiBumi.csproj": {}
+    "C:\\#Mufa\\Stima\\Tubes\\tubes1-if2211-starter-pack-main\\tubes1-if2211-starter-pack-main\\sample-bots-csharp-0.30.0\\RotasiBumi\\RotasiBumi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Documents\\GitHub\\Kampus\\Sem-4\\Panzerfaust\\src\\main-bot\\RotasiBumi\\RotasiBumi.csproj": {
+    "C:\\#Mufa\\Stima\\Tubes\\tubes1-if2211-starter-pack-main\\tubes1-if2211-starter-pack-main\\sample-bots-csharp-0.30.0\\RotasiBumi\\RotasiBumi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\Kampus\\Sem-4\\Panzerfaust\\src\\main-bot\\RotasiBumi\\RotasiBumi.csproj",
+        "projectUniqueName": "C:\\#Mufa\\Stima\\Tubes\\tubes1-if2211-starter-pack-main\\tubes1-if2211-starter-pack-main\\sample-bots-csharp-0.30.0\\RotasiBumi\\RotasiBumi.csproj",
         "projectName": "RotasiBumi",
-        "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\Kampus\\Sem-4\\Panzerfaust\\src\\main-bot\\RotasiBumi\\RotasiBumi.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\Kampus\\Sem-4\\Panzerfaust\\src\\main-bot\\RotasiBumi\\obj\\",
+        "projectPath": "C:\\#Mufa\\Stima\\Tubes\\tubes1-if2211-starter-pack-main\\tubes1-if2211-starter-pack-main\\sample-bots-csharp-0.30.0\\RotasiBumi\\RotasiBumi.csproj",
+        "packagesPath": "C:\\Users\\HYPE AMD\\.nuget\\packages\\",
+        "outputPath": "C:\\#Mufa\\Stima\\Tubes\\tubes1-if2211-starter-pack-main\\tubes1-if2211-starter-pack-main\\sample-bots-csharp-0.30.0\\RotasiBumi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HYPE AMD\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
