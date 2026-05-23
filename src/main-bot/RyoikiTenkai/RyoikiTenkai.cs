@@ -101,7 +101,6 @@ public class RyoikiTenkai : Bot
     // ================= KONSTRUKTOR =================
     RyoikiTenkai() : base(BotInfo.FromFile("RyoikiTenkai.json")) { }
 
-    // Method pertama yang dijalankan saat ronde dimulai
     public override void Run()
     {
         Console.WriteLine("🤞Ryōiki Tenkai🤞 | Round : " + RoundNumber);
@@ -122,7 +121,6 @@ public class RyoikiTenkai : Bot
         hitsag = 0;
     }
 
-    // Method yang dijalankan setiap frame game
     public override void OnTick(TickEvent e)
     {
         TurretColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
@@ -137,7 +135,6 @@ public class RyoikiTenkai : Bot
             bullet.X += bullet.Speed * Math.Cos(bullet.Direction);
             bullet.Y += bullet.Speed * Math.Sin(bullet.Direction);
             g.FillRectangle(Brushes.Black, (float)bullet.X, (float)bullet.Y, (float)(3 * bullet.Power), (float)(3 * bullet.Power));
-            // Console.WriteLine("BulletId: " + i + " X: " + bullet.X + " Y: " + bullet.Y);
 
             if (bullet.X < 0 - BULLET_OFFSET_ARENA || bullet.X > ArenaWidth + BULLET_OFFSET_ARENA ||
                 bullet.Y < 0 - BULLET_OFFSET_ARENA || bullet.Y > ArenaHeight + BULLET_OFFSET_ARENA)
@@ -156,7 +153,6 @@ public class RyoikiTenkai : Bot
             bullet.X += bullet.Speed * Math.Cos(bullet.Direction);
             bullet.Y += bullet.Speed * Math.Sin(bullet.Direction);
             g.FillRectangle(myBullets[i].Type == 0 ? Brushes.Black : Brushes.Red, (float)bullet.X, (float)bullet.Y, (float)(3 * bullet.Power), (float)(3 * bullet.Power));
-            // Console.WriteLine("BulletId: " + i + " X: " + bullet.X + " Y: " + bullet.Y);
 
             EnemyData data = enemyData[myBullets[i].Target];
             if (distance(data.LastX, data.LastY, bullet.X, bullet.Y) < 18)
@@ -222,10 +218,8 @@ public class RyoikiTenkai : Bot
         SetForward(DistanceTo(destX, destY) * Math.Cos(turn));
     }
 
-    // Aksi yang dilakukan bot saat menemukan musuh
     public override void OnScannedBot(ScannedBotEvent e)
     {
-        // Update enemy data
         if (!enemyData.ContainsKey(e.ScannedBotId))
         {
             enemyData[e.ScannedBotId] = new EnemyData();
@@ -235,7 +229,6 @@ public class RyoikiTenkai : Bot
         data.LastY = e.Y;
         data.IsAlive = true;
 
-        // Lock closest target
         double scannedDistance = enemyDistance = DistanceTo(e.X, e.Y);
         if (scannedDistance < targetDistance)
         {
@@ -283,7 +276,6 @@ public class RyoikiTenkai : Bot
                 SetTurnLeft(Math.Tan(turn) * 180 / Math.PI);
                 SetForward((3 + (int)(energyDrop * 1.999999)) * 8 * Math.Sign(Math.Cos(turn)));
             }
-            // Console.WriteLine("Bullet Speed: " + CalcBulletSpeed(energyDrop) + " Power: " + energyDrop);
         }
         data.LastEnergy = e.Energy;
 
@@ -308,14 +300,12 @@ public class RyoikiTenkai : Bot
         }
         data.HasPrevious = true;
 
-        // Head-on fallback
         if (data.Type.IndexOf(data.Type.Max()) != 0)
         {
             SetTurnGunLeft(GunBearingTo(e.X, e.Y));
             return;
         }
 
-        // --- Play It Forward ---
         double predictedX = e.X;
         double predictedY = e.Y;
         double predictedDirection = currentDirection;
@@ -350,7 +340,6 @@ public class RyoikiTenkai : Bot
             time++;
         }
 
-        // Bullet's Wall Avoidance
         predictedX = Math.Max(MOVE_WALL_MARGIN, Math.Min(ArenaWidth - MOVE_WALL_MARGIN, predictedX));
         predictedY = Math.Max(MOVE_WALL_MARGIN, Math.Min(ArenaHeight - MOVE_WALL_MARGIN, predictedY));
 
@@ -506,10 +495,9 @@ public class RyoikiTenkai : Bot
 // Menyimpan state movement musuh
 public struct State
 {
-    public int AngularVelocity; // quantized: radian * 1024
-    public int Speed;           // -8 -- 8
-    public int Acceleration;    // -1 -- 1
-
+    public int AngularVelocity;
+    public int Speed;           
+    public int Acceleration;    
     public State(double angularVelocity, double speed, double acceleration)
     {
         AngularVelocity = (int)(angularVelocity * 1024);

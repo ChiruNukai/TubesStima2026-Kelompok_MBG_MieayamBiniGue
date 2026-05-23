@@ -5,6 +5,6 @@
   "description": "Kali ini saya akan lawan! Domain Expansion!!!",
   "homepage": "",
   "countryCodes": ["id"],
-  "platform": ".Net 9.0",
+  "platform": ".Net 10.0",
   "programmingLang": "C# 10.0"
 }
