@@ -1,8 +1,8 @@
 {
   "name": "RotasiBumi",
-  "version": "1.1",
+  "version": "1.2",
   "authors": ["Jalaludin Mufadhol A"],
-  "description": "Bot that go straight to enemies they detect and will turn around to avoid enemy attacks if they are close enough.",
+  "description": "Bot yang langsung menuju musuh yang terdeteksi dan akan berrotasi untuk menghindari serangan musuh jika jaraknya cukup dekat.",
   "homepage": "",
   "countryCodes": ["id"],
   "platform": ".Net 10.0",
