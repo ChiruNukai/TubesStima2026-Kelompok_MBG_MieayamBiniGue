@@ -5,7 +5,6 @@ using Robocode.TankRoyale.BotApi.Events;
 
 public class Kamikaze : Bot
 {   
-    /* A bot that drives forward and backward, and fires a bullet */
     static void Main(string[] args)
     {
         new Kamikaze().Start();
@@ -15,15 +14,15 @@ public class Kamikaze : Bot
 
     public override void Run()
     {
-        BodyColor = Color.Black;
-        TurretColor = Color.Black;
+        BodyColor = Color.White;
+        TurretColor = Color.Red;
         RadarColor = Color.Red;
         BulletColor = Color.Red;
-        ScanColor = Color.FromArgb(0xFF, 0xC8, 0xC8);
+        ScanColor = Color.Red;
 
-        
         while (IsRunning)
         {
+            //Maju Kedepan dan Scan musuh disekitar
             SetForward(100); 
             SetTurnGunLeft(360);
             Go(); 
@@ -37,27 +36,30 @@ public class Kamikaze : Bot
         double bearing = GunBearingTo(e.X, e.Y);
 
 
-        SetTurnLeft(angle);
-        SetTurnGunLeft(bearing);
+        SetTurnLeft(angle); //Memutar Badan Tank Kearah Musuh yang terscan
+        SetTurnGunLeft(bearing); //Memutar Turret Tank Kearah Musuh yang terscan
 
-        Fire(3);
+        if (Math.Abs(bearing) < 10 && GunHeat == 0) { //Menembak dengan kekuatan penuh saat turret sudah lurus ke musuh
+            Fire(3);
+        }
 
-        SetForward(100);
+        SetForward(100); //Maju terus
         Go();
     }
 
     public override void OnHitBot(HitBotEvent e)
     {   
-
-        SetForward(100);
+        //Ketika menabrak musuh maju terus
+        SetForward(100); 
         Fire(3); 
         Go();
     }
 
     public override void OnHitWall(HitWallEvent e)
     {
-
+        //Ketika menabrak tembok mundur dan berputar
         Back(60);
         TurnRight(180);
     }
+
 }

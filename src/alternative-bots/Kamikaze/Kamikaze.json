@@ -1,8 +1,8 @@
 {
   "name": "Kamikaze",
-  "version": "1.0",
+  "version": "1.1",
   "authors": ["Jalaludin Mufadhol A"],
-  "description": "A bot that will destroy detected enemies by crashing into itself and firing a powerful attack.",
+  "description": "Sebuah bot yang akan menghancurkan musuh yang terdeteksi dengan menabrak dirinya sendiri dan melancarkan serangan yang terkuat.",
   "homepage": "",
   "countryCodes": ["id"],
   "platform": ".Net 10.0",
