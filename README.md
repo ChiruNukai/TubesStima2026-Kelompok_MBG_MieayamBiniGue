@@ -1,5 +1,5 @@
 # 🤖 Tank Royale — Penerapan Algoritma Greedy
-**Tugas Besar IF2521-01013: Strategi Algoritma**  
+**Tugas Besar IF25-21013: Strategi Algoritma**  
 Institut Teknologi Sumatera — 2026
 
 ---
